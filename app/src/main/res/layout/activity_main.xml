@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layout_constraintCircleRadius="@dimen/rad"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="307dp"
+        android:layout_marginBottom="459dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="246dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="408dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/cabin_bold"
+        android:text="@string/welcome1"
+        android:textColor="#00BCD4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="344dp"
+        android:fontFamily="@font/cabin"
+        android:text="@string/role"
+        android:textColor="#00BCD4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/patient"
+        android:layout_width="241dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="278dp"
+        android:background="#84D7DD"
+        android:ellipsize="middle"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/patient"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00BCD4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/position" />
+
+    <Button
+        android:id="@+id/doctor"
+        android:layout_width="241dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="188dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/cabin_medium"
+        android:shadowColor="#00BCD4"
+        android:text="@string/doctor"
+        android:textColor="#00BCD4"
+        android:textColorHighlight="#00BCD4"
+        android:textColorHint="#03A9F4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

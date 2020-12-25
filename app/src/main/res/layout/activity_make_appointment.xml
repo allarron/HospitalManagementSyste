@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5F6"
+    tools:context=".MakeAppointment">
+
+    <ImageView
+        android:id="@+id/takeCare3"
+        android:layout_width="242dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="668dp"
+        android:contentDescription="@string/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="667dp"
+        android:contentDescription="@string/pill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icons8_pill_48" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="621dp"
+        android:fontFamily="@font/cabin_bold"
+        android:text="@string/makeApp"
+        android:textColor="#41A5B2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takeCare3" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="537dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="date"
+        android:labelFor="@id/radioButton3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="49dp"
+        android:fontFamily="@font/cabin_medium"
+        android:labelFor="@id/editTextDate"
+        android:text="@string/doctorsname"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="214dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="49dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/doctor2"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="41dp"
+        android:fontFamily="@font/cabin_medium"
+        android:text="@string/doctor3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="63dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="122dp"
+        android:contentDescription="@string/doctorsname"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/takeCare3"
+        app:srcCompat="@drawable/icons8_person_80" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="61dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="121dp"
+        android:contentDescription="@string/doctor2"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/icons8_person_female_80" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="57dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="125dp"
+        android:contentDescription="@string/doctor3"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/icons8_person_80" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="54dp"
+        android:text="@string/doctorNurs"
+        android:textColor="#03A9F4"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/doctorAru"
+        android:textColor="#03A9F4"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="31dp"
+        android:text="@string/doctorMiras"
+        android:textColor="#03A9F4"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <Button
+        android:id="@+id/request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="162dp"
+        android:background="#84D7DD"
+        android:fontFamily="@font/cabin_bold"
+        android:text="@string/makeAppp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

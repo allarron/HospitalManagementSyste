@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5F6"
+    tools:context=".doctors_page">
+
+    <ImageView
+        android:id="@+id/TakeCare"
+        android:layout_width="242dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="668dp"
+        android:contentDescription="@string/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="92dp"
+        android:background="#84D7DD"
+        android:text="@string/logout"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="698dp"
+        android:fontFamily="@font/cabin_bold"
+        android:text="@string/id1"
+        android:textColor="#00BCD4"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/TakeCare"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/patientList"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="246dp"
+        android:background="#82D0D6"
+        android:contentDescription="@string/patientList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule"
+        app:srcCompat="@drawable/icons8_treatment_96" />
+
+    <ImageButton
+        android:id="@+id/complaints"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="51dp"
+        android:background="#82D0D6"
+        android:contentDescription="@string/complaints"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/schedule"
+        app:layout_constraintTop_toBottomOf="@+id/TakeCare"
+        app:srcCompat="@drawable/icons8_doctors_bag_64" />
+
+    <ImageButton
+        android:id="@+id/schedule"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="43dp"
+        android:background="#82D0D6"
+        android:contentDescription="@string/schedule"
+        app:layout_constraintBottom_toTopOf="@+id/patientList"
+        app:layout_constraintEnd_toStartOf="@+id/complaints"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TakeCare"
+        app:srcCompat="@drawable/icons8_schedule_80" />
+
+    <ImageButton
+        android:id="@+id/edit"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="246dp"
+        android:background="#82D0D6"
+        android:contentDescription="@string/edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/patientList"
+        app:layout_constraintTop_toBottomOf="@+id/complaints"
+        app:srcCompat="@drawable/account" />
+
+    <TextView
+        android:id="@+id/scheduletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/schedule"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/patientList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/complainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/complaints"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/scheduletext"
+        app:layout_constraintTop_toBottomOf="@+id/complaints"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/patientText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/patientList"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/edittext"
+        app:layout_constraintEnd_toStartOf="@+id/edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientList"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="218dp"
+        android:text="@string/edit"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/patientText"
+        app:layout_constraintTop_toBottomOf="@+id/edit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/pill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="140dp"
+        android:contentDescription="@string/pill"
+        app:layout_constraintBottom_toTopOf="@+id/schedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TakeCare"
+        app:layout_constraintVertical_bias="0.651"
+        app:srcCompat="@drawable/icons8_pill_48" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/cabin_bold"
+        android:text="@string/doctorsname"
+        android:textColor="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
